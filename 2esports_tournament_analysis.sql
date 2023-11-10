@@ -1,3 +1,5 @@
+/*Creating Tables and Rows*/
+
 create table teams(
 t_id int primary key,
 team_name varchar(45),
@@ -64,6 +66,8 @@ values
 (10, 4, 5, '2022-01-01', 4, 13, 10);
 
 
+/*Questions*/
+
 /*1. What are the names of the players whose salary is greater than 100,000?*/
 select player_name,salary
 from players
@@ -103,7 +107,7 @@ END*/
 
 
 /*5. What are the player names and their roles in the team with team_id = 1?*/
-/*SP*/
+
 select player_name,role
 from players
 where t_id=1;
