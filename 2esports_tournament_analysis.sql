@@ -242,7 +242,7 @@ SELECT
         WHEN score_team1 > score_team2 THEN team1_id
         ELSE team2_id
     END AS Team_WON
-FROM matches
+FROM matches 
 WHERE m_id = in_matchID AND winner_id = CASE 
                                 WHEN score_team1 > score_team2 THEN team1_id
                                 ELSE team2_id
